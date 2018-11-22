@@ -1,28 +1,26 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, { lazy, Suspense } from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
+import Main from "./Main/Main";
+import Dashboard from "./Dashboard/Dashboard";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
+const HOC = lazy(() => import('./HOC/HOC'));
+const Context = lazy(() => import('./Context/Context'));
+
+const App = () => (
+  <Router>
+    <Main path="/">
+      <Route exact path="/" component={Dashboard} />
+      <Suspense fallback={<div>Loading...</div>}>
+        {/* The fallback prop accepts any React elements that you want to render while waiting for the component to load.
+        You can place the Suspense component anywhere above the lazy component */}
+        <Switch>
+          <Route path="/HOC" component={HOC} />
+          <Route path="/context" component={Context} />
+        </Switch>
+      </Suspense>
+    </Main>
+  </Router >
+);
 
 export default App;
