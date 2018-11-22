@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 import Main from "./Main/Main";
 import Dashboard from "./Dashboard/Dashboard";
+import DiffCounter from './ErrorBoundaries/DiffCounter';
 
 const HOC = lazy(() => import('./HOC/HOC'));
 const Context = lazy(() => import('./Context/Context'));
@@ -17,6 +18,7 @@ const App = () => (
         <Switch>
           <Route path="/HOC" component={HOC} />
           <Route path="/context" component={Context} />
+          <Route path="/error-boundary" component={DiffCounter} />
         </Switch>
       </Suspense>
     </Main>

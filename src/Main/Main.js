@@ -9,6 +9,7 @@ const Main = ({ children }) => {
         <nav>
           <Link to="/">Dashboard</Link>
           <Link to="/context">Context</Link>
+          <Link to="/error-boundary">error-boundary</Link>
           <Link to="/hoc">HOC</Link>
         </nav>
       </header>

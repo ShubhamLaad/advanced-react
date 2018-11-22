@@ -21,14 +21,17 @@ Your app is ready to be deployed!
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ## Project has:
-Every advanced guid in diff route
+Advanced react example in different route
 
 ### Code-Splitting
-App.js have code inside routing part.
 `` Can be use for splitting large componet to load in memory ``
+Example in App.js routing code
 
 ### Context
 `` Context is primarily used when some data needs to be accessible by many components at different nesting levels eg: internationalization or some theme to every component. ``
+
+### Error Boundaries
+`` catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI  ``
 
 ### HOC
 ### Error Boundaries
