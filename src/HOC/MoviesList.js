@@ -3,8 +3,6 @@ import loaderHOC from './LoaderHOC';
 
 class MoviesList extends Component {
   render() {
-    console.log('%c Oh my heavens! ', 'background: #222; color: #bada55');
-    console.log(this)
     return (
       <Fragment >
         <h3>{this.props.name}</h3>

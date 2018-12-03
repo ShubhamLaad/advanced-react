@@ -4,6 +4,7 @@ import './App.css';
 import Main from "./Main/Main";
 import Dashboard from "./Dashboard/Dashboard";
 import DiffCounter from './ErrorBoundaries/DiffCounter';
+import Portals from './Portals/Portals';
 
 const HOC = lazy(() => import('./HOC/HOC'));
 const Context = lazy(() => import('./Context/Context'));
@@ -19,6 +20,7 @@ const App = () => (
           <Route path="/HOC" component={HOC} />
           <Route path="/context" component={Context} />
           <Route path="/error-boundary" component={DiffCounter} />
+          <Route path="/portals" component={Portals} />
         </Switch>
       </Suspense>
     </Main>

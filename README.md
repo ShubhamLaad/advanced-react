@@ -24,15 +24,17 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 Advanced react example in different route
 
 ### Code-Splitting
-`` Can be use for splitting large componet to load in memory ``
+`` Can be use for splitting large componet to load in memory. ``
 Example in App.js routing code
 
 ### Context
 `` Context is primarily used when some data needs to be accessible by many components at different nesting levels eg: internationalization or some theme to every component. ``
 
 ### Error Boundaries
-`` Catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI  ``
+`` Catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI. ``
 
 ### HOC
-`` Higher-order component is a function that takes a component and returns a new component ``
+`` Higher-order component is a function that takes a component and returns a new component. ``
 
+### Portals
+`` Portals provide a first-class way to render children into a DOM node that exists outside the DOM hierarchy of the parent component. ``
