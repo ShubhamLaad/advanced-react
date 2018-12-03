@@ -31,8 +31,8 @@ Example in App.js routing code
 `` Context is primarily used when some data needs to be accessible by many components at different nesting levels eg: internationalization or some theme to every component. ``
 
 ### Error Boundaries
-`` catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI  ``
+`` Catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI  ``
 
 ### HOC
-### Error Boundaries
+`` Higher-order component is a function that takes a component and returns a new component ``
 
